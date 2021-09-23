@@ -16,5 +16,5 @@ namespace MathQuiz
         {
             InitializeComponent();
         }
-    }
+Z    }
 }

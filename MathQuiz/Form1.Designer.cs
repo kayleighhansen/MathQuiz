@@ -63,9 +63,9 @@ namespace MathQuiz
             // plusLeftLabel
             // 
             this.plusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plusLeftLabel.Location = new System.Drawing.Point(226, 159);
+            this.plusLeftLabel.Location = new System.Drawing.Point(168, 159);
             this.plusLeftLabel.Name = "plusLeftLabel";
-            this.plusLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.plusLeftLabel.Size = new System.Drawing.Size(118, 50);
             this.plusLeftLabel.TabIndex = 2;
             this.plusLeftLabel.Text = "?";
             this.plusLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,9 +83,9 @@ namespace MathQuiz
             // plusRightLabel
             // 
             this.plusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plusRightLabel.Location = new System.Drawing.Point(414, 159);
+            this.plusRightLabel.Location = new System.Drawing.Point(370, 159);
             this.plusRightLabel.Name = "plusRightLabel";
-            this.plusRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.plusRightLabel.Size = new System.Drawing.Size(129, 50);
             this.plusRightLabel.TabIndex = 4;
             this.plusRightLabel.Text = "?";
             this.plusRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -148,9 +148,9 @@ namespace MathQuiz
             // minusRightLabel
             // 
             this.minusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minusRightLabel.Location = new System.Drawing.Point(414, 255);
+            this.minusRightLabel.Location = new System.Drawing.Point(380, 255);
             this.minusRightLabel.Name = "minusRightLabel";
-            this.minusRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.minusRightLabel.Size = new System.Drawing.Size(108, 50);
             this.minusRightLabel.TabIndex = 11;
             this.minusRightLabel.Text = "?";
             this.minusRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,9 +168,9 @@ namespace MathQuiz
             // minusLeftLabel
             // 
             this.minusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minusLeftLabel.Location = new System.Drawing.Point(226, 255);
+            this.minusLeftLabel.Location = new System.Drawing.Point(178, 255);
             this.minusLeftLabel.Name = "minusLeftLabel";
-            this.minusLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.minusLeftLabel.Size = new System.Drawing.Size(108, 50);
             this.minusLeftLabel.TabIndex = 9;
             this.minusLeftLabel.Text = "?";
             this.minusLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -196,9 +196,9 @@ namespace MathQuiz
             // timesRightLabel
             // 
             this.timesRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timesRightLabel.Location = new System.Drawing.Point(415, 345);
+            this.timesRightLabel.Location = new System.Drawing.Point(380, 345);
             this.timesRightLabel.Name = "timesRightLabel";
-            this.timesRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.timesRightLabel.Size = new System.Drawing.Size(119, 50);
             this.timesRightLabel.TabIndex = 16;
             this.timesRightLabel.Text = "?";
             this.timesRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -216,9 +216,9 @@ namespace MathQuiz
             // timesLeftLabel
             // 
             this.timesLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timesLeftLabel.Location = new System.Drawing.Point(227, 345);
+            this.timesLeftLabel.Location = new System.Drawing.Point(188, 345);
             this.timesLeftLabel.Name = "timesLeftLabel";
-            this.timesLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.timesLeftLabel.Size = new System.Drawing.Size(99, 50);
             this.timesLeftLabel.TabIndex = 14;
             this.timesLeftLabel.Text = "?";
             this.timesLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -244,9 +244,9 @@ namespace MathQuiz
             // dividedRightLabel
             // 
             this.dividedRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dividedRightLabel.Location = new System.Drawing.Point(415, 440);
+            this.dividedRightLabel.Location = new System.Drawing.Point(380, 440);
             this.dividedRightLabel.Name = "dividedRightLabel";
-            this.dividedRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.dividedRightLabel.Size = new System.Drawing.Size(119, 50);
             this.dividedRightLabel.TabIndex = 21;
             this.dividedRightLabel.Text = "?";
             this.dividedRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,9 +264,9 @@ namespace MathQuiz
             // dividedLeftLabel
             // 
             this.dividedLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dividedLeftLabel.Location = new System.Drawing.Point(227, 440);
+            this.dividedLeftLabel.Location = new System.Drawing.Point(188, 440);
             this.dividedLeftLabel.Name = "dividedLeftLabel";
-            this.dividedLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.dividedLeftLabel.Size = new System.Drawing.Size(99, 50);
             this.dividedLeftLabel.TabIndex = 19;
             this.dividedLeftLabel.Text = "?";
             this.dividedLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

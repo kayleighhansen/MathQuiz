@@ -37,6 +37,8 @@ namespace MathQuiz
             minusRightLabel.Text = subtracted2.ToString();
             timesLeftLabel.Text = multiplied1.ToString();
             timesRightLabel.Text = multiplied2.ToString();
+            dividedLeftLabel.Text = divided1.ToString();
+            dividedRightLabel.Text = divided2.ToString();
 
             sum.Value = 0;
             difference.Value = 0;
@@ -65,7 +67,6 @@ namespace MathQuiz
                     return true;
                 else
                     return false;
-             
          }
 
         private void timer1_Tick_1(object sender, EventArgs e)

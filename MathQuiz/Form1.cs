@@ -14,19 +14,34 @@ namespace MathQuiz
     {
         Random randomizer = new Random();
 
-        int addend1;
-        int addend2;
+        int addend1; int addend2;
+        int subtracted1; int subtracted2;
+        int multiplied1; int multiplied2;
+        int divided1; int divided2;
 
         int timeLeft;
         public void StartTheQuiz()
         {
             addend1 = randomizer.Next(51);
             addend2 = randomizer.Next(51);
+            subtracted1 = randomizer.Next(51);
+            subtracted2 = randomizer.Next(51);
+            multiplied1 = randomizer.Next(51);
+            multiplied2 = randomizer.Next(51);
+            divided1 = randomizer.Next(51);
+            divided2 = randomizer.Next(51);
 
             plusLeftLabel.Text = addend1.ToString();
             plusRightLabel.Text = addend2.ToString();
+            minusLeftLabel.Text = subtracted1.ToString();
+            minusRightLabel.Text = subtracted2.ToString();
+            timesLeftLabel.Text = multiplied1.ToString();
+            timesRightLabel.Text = multiplied2.ToString();
 
             sum.Value = 0;
+            difference.Value = 0;
+            product.Value = 0;
+            quotient.Value = 0;
 
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
@@ -44,19 +59,20 @@ namespace MathQuiz
             startButton.Enabled = false;
         }
 
-        private bool CheckTheAnswer()
-        {
+        private bool CheckTheAnswer() {
+
             if (addend1 + addend2 == sum.Value)
-                return true;
-            else
-                return false;
-        }
+                    return true;
+                else
+                    return false;
+             
+         }
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            if (CheckTheAnswer())
+            if (CheckTheAnswer() && timeLabel.Text != "")
             {
-                //timer1.Stop();
+                timer1.Stop();
                 MessageBox.Show("You got all the answers right!", "Congratulations!");
                 startButton.Enabled = true;
             }

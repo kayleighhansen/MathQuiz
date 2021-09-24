@@ -63,7 +63,7 @@ namespace MathQuiz
             // plusLeftLabel
             // 
             this.plusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plusLeftLabel.Location = new System.Drawing.Point(168, 159);
+            this.plusLeftLabel.Location = new System.Drawing.Point(178, 159);
             this.plusLeftLabel.Name = "plusLeftLabel";
             this.plusLeftLabel.Size = new System.Drawing.Size(118, 50);
             this.plusLeftLabel.TabIndex = 2;
@@ -126,6 +126,7 @@ namespace MathQuiz
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(100, 53);
             this.sum.TabIndex = 2;
+            this.sum.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // difference
             // 
@@ -134,6 +135,7 @@ namespace MathQuiz
             this.difference.Name = "difference";
             this.difference.Size = new System.Drawing.Size(100, 53);
             this.difference.TabIndex = 3;
+            this.difference.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // label3
             // 
@@ -182,6 +184,7 @@ namespace MathQuiz
             this.product.Name = "product";
             this.product.Size = new System.Drawing.Size(100, 53);
             this.product.TabIndex = 4;
+            this.product.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // label4
             // 
@@ -230,6 +233,7 @@ namespace MathQuiz
             this.quotient.Name = "quotient";
             this.quotient.Size = new System.Drawing.Size(100, 53);
             this.quotient.TabIndex = 5;
+            this.quotient.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // label7
             // 

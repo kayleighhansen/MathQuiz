@@ -20,11 +20,14 @@ namespace MathQuiz
         int temporaryQuotient; int divisor; int dividend;
 
         int timeLeft;
+
+
         public void StartTheQuiz()
         {
+            
             addend1 = randomizer.Next(51);  
             addend2 = randomizer.Next(51);
-            subtracted1 = randomizer.Next(1, 101);
+            subtracted1 = randomizer.Next(2, 101);
             subtracted2 = randomizer.Next(1, subtracted1);
             multiplied1 = randomizer.Next(2, 11);
             multiplied2 = randomizer.Next(2, 11);
@@ -43,6 +46,8 @@ namespace MathQuiz
             dividedLeftLabel.Text = dividend.ToString();
             dividedRightLabel.Text = divisor.ToString();
 
+
+
             sum.Value = 0;
             difference.Value = 0;
             product.Value = 0;
@@ -53,9 +58,9 @@ namespace MathQuiz
             timer1.Start();
         }
 
-        public Form1()
+        public void DisplayDate()
         {
-            InitializeComponent();
+            currentDate.Text = DateTime.Now.ToString("dd MMMM yyyy");
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -67,7 +72,9 @@ namespace MathQuiz
         private bool CheckTheAnswer() {
 
             if ((addend1 + addend2 == sum.Value) && 
-                (subtracted1 - subtracted2 == difference.Value))
+                (subtracted1 - subtracted2 == difference.Value) &&
+                (multiplied1 * multiplied2 == product.Value) &&
+                (dividend / divisor == quotient.Value))
                     return true;
                 else
                     return false;
@@ -85,6 +92,10 @@ namespace MathQuiz
             {
                 timeLeft--;
                 timeLabel.Text = timeLeft + " seconds";
+                if (timeLeft <= 3)
+                {
+                    timeLabel.BackColor = Color.Red;
+                }
             }
             else
             {
@@ -107,6 +118,13 @@ namespace MathQuiz
                 int lengthOfAnswer = answerBox.Value.ToString().Length;
                 answerBox.Select(0, lengthOfAnswer);
             }
+        }
+
+
+        public Form1()
+        {
+            InitializeComponent();
+            DisplayDate();
         }
     }
 }

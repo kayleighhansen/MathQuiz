@@ -30,6 +30,7 @@ namespace MathQuiz
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.plusLeftLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.plusRightLabel = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@ namespace MathQuiz
             this.dividedLeftLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.currentDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -278,7 +280,7 @@ namespace MathQuiz
             // startButton
             // 
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(315, 654);
+            this.startButton.Location = new System.Drawing.Point(315, 598);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(286, 61);
             this.startButton.TabIndex = 1;
@@ -291,11 +293,20 @@ namespace MathQuiz
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // currentDate
+            // 
+            this.currentDate.AutoSize = true;
+            this.currentDate.Location = new System.Drawing.Point(725, 684);
+            this.currentDate.Name = "currentDate";
+            this.currentDate.Size = new System.Drawing.Size(0, 25);
+            this.currentDate.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(930, 743);
+            this.Controls.Add(this.currentDate);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
             this.Controls.Add(this.label7);
@@ -320,9 +331,10 @@ namespace MathQuiz
             this.Controls.Add(this.label2);
             this.Controls.Add(this.plusLeftLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Math Quiz";
+            this.Text = "Kayleigh Hansen Math Quiz";
             ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).EndInit();
@@ -357,6 +369,7 @@ namespace MathQuiz
         private System.Windows.Forms.Label dividedLeftLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label currentDate;
     }
 }
 
